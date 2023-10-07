@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Form</title>
+        <nav>
+            <div class="logo"><img src= "tatsam.jpeg" align=left height=60 width=60>
+            </div>
+            <div class="Heading"><h1>Welcome to Tatsam</h1>
+            </div>
+        </nav>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body> 
+        
+        <br>
+        <section class="zero">
+        <div class="zero-container">
+            <h1> About </h1>
+            <font size=4> Tatsam is a hindi literary society which focuses on promoting hindi amongst college students by giving 
+                        them a chance to develop their talent in various hindi literature domains like shayari, kavitta and many more.
+                        It is one of the most active societies in NSUT which organises regular debate competitions, group discussions, 
+                        poetic gatherings etc. </font>
+            <h1> Departments </h1>
+                <ul>
+                    <li>GD(Group Discussions)</li>
+                    <li>PR(Public Relations)</li>
+                    <li>Tech</li> 
+                    <li>Sponsorship</li> 
+                    <li>Content</li>
+                </ul> 
+            <h1> How to Join? </h1>
+                To join Tatsam fill the form below:- 
+     
+            <form action= "mailto:hraj82565@gmail.com" method="post">
+                <p>Name: &nbsp<input type="text" name="name" >
+                 <br> </p>
+                <p>Email: &nbsp<input type="text" name="email">
+                <br></p>
+                <p>Gender:
+                   <input type="radio" name="gender">
+                      <label for="MALE">Male</label>
+                    <input type="radio" name="gender">
+                      <label for="FEMALE">Female</label> <br></p>
+                    
+                 <p>Department:<Select name=department selected>
+                <option value="GD">GD </option>
+                <option value="PR">PR </option>
+                 <option value="Content"> Content </option>
+                 <option value="Sponsorship"> Sponsorship </option>
+                <option value="Tech">Tech </option> 
+                </select> <br></p>
+                <input type=submit name=submit value=Submit>
+            </form>
+        </div>        
+    </section>
+    </body>
+</html>
