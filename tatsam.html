@@ -1,59 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name ="viewport" content="width=device-width, intial-scale=1.0">
-        <title>Form</title>
-        <nav>
-            <div class="logo"><img src= "tatsam.jpeg" align=left height=60 width=60>
-            </div>
-            <div class="Heading"><h1>Welcome to Tatsam</h1>
-            </div>
-        </nav>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body> 
-        
-        <br>
-        <section class="zero">
-        <div class="zero-container">
-            <h1> About </h1>
-            <font size=4> Tatsam is a hindi literary society which focuses on promoting hindi amongst college students by giving 
-                        them a chance to develop their talent in various hindi literature domains like shayari, kavitta and many more.
-                        It is one of the most active societies in NSUT which organises regular debate competitions, group discussions, 
-                        poetic gatherings etc. </font>
-            <h1> Departments </h1>
-                <ul>
-                    <li>GD(Group Discussions)</li>
-                    <li>PR(Public Relations)</li>
-                    <li>Tech</li> 
-                    <li>Sponsorship</li> 
-                    <li>Content</li>
-                </ul> 
-            <h1> How to Join? </h1>
-                To join Tatsam fill the form below:- 
-     
-            <form action= "mailto:hraj82565@gmail.com" method="post">
-                <p>Name: &nbsp<input type="text" name="name" >
-                 <br> </p>
-                <p>Email: &nbsp<input type="text" name="email">
-                <br></p>
-                <p>Gender:
-                   <input type="radio" name="gender">
-                      <label for="MALE">Male</label>
-                    <input type="radio" name="gender">
-                      <label for="FEMALE">Female</label> <br></p>
-                    
-                 <p>Department:<Select name=department selected>
-                <option value="GD">GD </option>
-                <option value="PR">PR </option>
-                 <option value="Content"> Content </option>
-                 <option value="Sponsorship"> Sponsorship </option>
-                <option value="Tech">Tech </option> 
-                </select> <br></p>
-                <input type=submit name=submit value=Submit>
-            </form>
-        </div>        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatsam - Hindi Literary Society</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="tatsam.jpeg" alt="Tatsam Logo">
+            <h1>Tatsam</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#join">Join Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Tatsam</h2>
+        <p>Tatsam is a Hindi literary society that promotes Hindi among college students, offering a platform for various literary activities like poetry, debates, and storytelling.</p>
     </section>
-    </body>
+
+    <!-- Departments Section -->
+    <section id="departments" class="section">
+        <h2>Departments</h2>
+        <ul>
+            <li>GD (Group Discussions)</li>
+            <li>PR (Public Relations)</li>
+            <li>Tech</li>
+            <li>Sponsorship</li>
+            <li>Content</li>
+        </ul>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+        <h2>Our Blog</h2>
+        <div class="blog-container">
+            <div class="blog-card">
+                <h3>Why Hindi Literature Matters</h3>
+                <p>Explore the richness of Hindi literature and its impact on our society...</p>
+                <button class="read-more">Read More</button>
+            </div>
+            <div class="blog-card">
+                <h3>The Art of Shayari</h3>
+                <p>Shayari is an artistic expression of emotions through poetry...</p>
+                <button class="read-more">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Form Section -->
+    <section id="join" class="section">
+        <h2>Join Tatsam</h2>
+        <form id="joinForm">
+            <label>Name:</label>
+            <input type="text" id="name" required>
+            
+            <label>Email:</label>
+            <input type="email" id="email" required>
+            
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            
+            <label>Department:</label>
+            <select id="department">
+                <option value="GD">GD</option>
+                <option value="PR">PR</option>
+                <option value="Tech">Tech</option>
+                <option value="Sponsorship">Sponsorship</option>
+                <option value="Content">Content</option>
+            </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</body>
 </html>
