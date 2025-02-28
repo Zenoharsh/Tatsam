@@ -1,19 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Form validation
-    document.getElementById("joinForm").addEventListener("submit", function(event) {
-        let name = document.getElementById("name").value;
-        let email = document.getElementById("email").value;
-        if (name.trim() === "" || email.trim() === "") {
-            alert("Please fill out all fields.");
-            event.preventDefault();
-        }
-    });
+document.addEventListener("DOMContentLoaded", function () {
+  const joinForm = document.getElementById("joinForm");
 
-    // Expandable blog cards
-    let readMoreButtons = document.querySelectorAll(".read-more");
-    readMoreButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            alert("This feature is coming soon!");
-        });
-    });
+  joinForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const department = document.getElementById("department").value;
+
+    if (name && email && department) {
+      alert(
+        `Thank you, ${name}! Your application for the ${department} department has been submitted.`
+      );
+      joinForm.reset();
+    } else {
+      alert("Please fill out all the fields.");
+    }
+  });
 });

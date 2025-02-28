@@ -1,116 +1,177 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-/* Gradient Background */
+/* Body */
 body {
-    background: linear-gradient(to right, #ffc400, #f66652);
-    color: #3b3834;
-    text-align: center;
+  background-color: #ffffec; /* Light off-white background */
+  color: #3b3834; /* Dark grey text for readability */
 }
 
-/* Navbar */
+/* Navigation Bar */
 nav {
-    background: linear-gradient(to right, #3b3834, #ffc400);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
+  background-color: #3b3834;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo img {
-    height: 50px;
-    width: 50px;
-    margin-right: 10px;
+  height: 50px;
+  width: auto;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .nav-links li {
-    margin: 0 15px;
+  margin: 0 15px;
+  position: relative;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: 0.3s;
+  text-decoration: none;
+  color: #ffffec;
+  font-weight: bold;
+  padding: 10px;
+  transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: #ffffec;
+  background-color: #ffc400;
+  color: #3b3834;
+  border-radius: 5px;
 }
 
-/* Sections */
-.section {
-    padding: 50px;
-    background: #ffffec;
-    margin: 20px auto;
-    border-radius: 10px;
-    width: 80%;
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f66652;
+  display: none;
+  flex-direction: column;
+  min-width: 150px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Blog Cards */
-.blog-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.nav-links li:hover .dropdown {
+  display: flex;
 }
 
-.blog-card {
-    background: linear-gradient(to right, #f66652, #ffc400);
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-    color: white;
-    transition: transform 0.3s ease-in-out;
+.dropdown a {
+  color: #ffffec;
+  padding: 10px;
+  transition: 0.3s;
 }
 
-.blog-card:hover {
-    transform: scale(1.05);
+.dropdown a:hover {
+  background-color: #ffc400;
+  color: #3b3834;
+}
+
+/* Section Styling */
+section {
+  padding: 40px;
+}
+
+.section-container {
+  background-color: #ffc400;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Departments */
+.departments ul {
+  list-style: none;
+  padding: 0;
+}
+
+.departments li {
+  background-color: #f66652;
+  color: #ffffec;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.departments li:hover {
+  background-color: #3b3834;
+  color: #ffffec;
 }
 
 /* Form */
 form {
-    background: #3b3834;
-    padding: 20px;
-    border-radius: 10px;
-    color: white;
-    width: 50%;
-    margin: auto;
+  background-color: #ffffec;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-form input, form select {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #3b3834;
+  border-radius: 5px;
 }
 
-form button {
-    background: #ffc400;
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+input[type="submit"] {
+  background-color: #f66652;
+  color: #ffffec;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-form button:hover {
-    background: #f66652;
+input[type="submit"]:hover {
+  background-color: #3b3834;
+}
+
+/* Blog Section */
+.blog-post {
+  margin-bottom: 20px;
+}
+
+.blog-post h2 {
+  color: #3b3834;
+  font-weight: bold;
+}
+
+.blog-post p {
+  color: #3b3834;
+}
+
+.read-more {
+  display: inline-block;
+  background-color: #f66652;
+  color: #ffffec;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.read-more:hover {
+  background-color: #3b3834;
 }
