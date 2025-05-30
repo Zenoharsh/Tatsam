@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,18 +6,18 @@
   font-family: Arial, sans-serif;
 }
 
-/* Body */
+
 body {
-  background-color: #ffffec; /* Light off-white background */
-  color: #3b3834; /* Dark grey text for readability */
+  background-color: #ffffec; 
+  color: #00000;
 }
 
-/* Navigation Bar */
+
 nav {
   background-color: #3b3834;
   padding: 15px 30px;
   display: flex;
-  align-items: center;
+  align-items: right;
   justify-content: space-between;
 }
 
