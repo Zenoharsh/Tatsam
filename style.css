@@ -8,13 +8,13 @@
 
 /* Body */
 body {
-  background-color: #ffffec; /* Light off-white background */
+  background-color: #ffffff; /* Light off-white background */
   color: #3b3834; /* Dark grey text for readability */
 }
 
 /* Navigation Bar */
 nav {
-  background-color: #3b3834;
+  background-color: #ffffff;
   padding: 15px 30px;
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@ nav {
 }
 
 .logo img {
-  height: 50px;
+  height: 4rem;
   width: auto;
 }
 
@@ -38,7 +38,7 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: #ffffec;
+  color: #3b3834;
   font-weight: bold;
   padding: 10px;
   transition: 0.3s;
@@ -55,12 +55,16 @@ nav {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #f66652;
+  padding: 10px 10px 10px;
+  z-index: 2;
+  background-color: #f66552d8;
   display: none;
   flex-direction: column;
-  min-width: 150px;
+  min-width: 100px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  gap: 10px;
 }
 
 .nav-links li:hover .dropdown {
@@ -74,7 +78,7 @@ nav {
 }
 
 .dropdown a:hover {
-  background-color: #ffc400;
+  background: transparent;
   color: #3b3834;
 }
 
@@ -84,22 +88,25 @@ section {
 }
 
 .section-container {
-  background-color: #ffc400;
+  background-color: #ffffff;
   padding: 30px;
   border-radius: 10px;
   margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid #f66652;
 }
 
 h1 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: semi-bold;
   margin-bottom: 10px;
 }
 
 /* Departments */
 .departments ul {
   list-style: none;
-  padding: 0;
+  padding: 10px;
 }
 
 .departments li {
