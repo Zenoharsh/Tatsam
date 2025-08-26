@@ -16,6 +16,10 @@ nav {
   display: flex;
   align-items: right;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
@@ -178,4 +182,45 @@ input[type="submit"]:hover {
 
 .read-more:hover {
   background-color: #3b3834;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.dept-card {
+  flex: 0 1 260px;
+}
+
+.card-header {
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #f66652;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card-header:hover {
+  background-color: #f66652;
+}
+
+.card-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.5s ease-out;
+  padding: 0 15px;
+  color: #3b3834;
+  background-color: #ffffff;
+}
+.dept-card.active .card-content {
+  max-height: 200px;
+  padding: 15px;
 }

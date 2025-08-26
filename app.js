@@ -18,3 +18,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+const cardHeaders = document.querySelectorAll(".card-header");
+
+cardHeaders.forEach((header) => {
+  header.addEventListener("click", () => {
+    const card = header.parentElement;
+    card.classList.toggle("active");
+  });
+});
